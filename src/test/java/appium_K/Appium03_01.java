@@ -26,7 +26,7 @@ public class Appium03_01 {
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"AndroidEmulator");
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"10.0");
 
-        desiredCapabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\mt\\IdeaProjects\\appium_test_first-master\\Apps\\gestureTool.apk");
+        desiredCapabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\mt\\IdeaProjects\\appium_test_calismasi\\Apps\\gestureTool.apk");
         //desiredCapabilities.setCapability("appPackage","com.touchboarder.android.api.demos");
         //desiredCapabilities.setCapability("appActivity","com.touchboarder.androidapidemos.MainActivity");
 
@@ -39,7 +39,7 @@ public class Appium03_01 {
         Thread.sleep(4000);
         // id ile bulduk
 
-        driver.findElementById("id/addButton").click();
+        driver.findElementById("com.davemac327.gesture.tool:id/addButton").click();
         // Xpath index  ile bulduk
         //driver.findElementByXPath("//android.widget.Button[1]").click();
         //Xpath text

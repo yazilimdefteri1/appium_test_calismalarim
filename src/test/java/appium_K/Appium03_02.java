@@ -25,7 +25,7 @@ public class Appium03_02 {
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"AndroidEmulator");
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"10.0");
 
-        desiredCapabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\mt\\IdeaProjects\\appium_test_first-master\\Apps\\gestureTool.apk");
+        desiredCapabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\mt\\IdeaProjects\\appium_test_calismasi\\Apps\\gestureTool.apk");
         //desiredCapabilities.setCapability("appPackage","com.touchboarder.android.api.demos");
         //desiredCapabilities.setCapability("appActivity","com.touchboarder.androidapidemos.MainActivity");
 

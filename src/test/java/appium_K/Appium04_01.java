@@ -27,7 +27,7 @@ public class Appium04_01 {
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "AndroidEmulator");
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
 
-        desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\mt\\IdeaProjects\\appium_test_first-master\\Apps\\Calculator.apk");
+        desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\mt\\IdeaProjects\\appium_test_calismasi\\Apps\\Calculator.apk");
         desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, true);
 
         AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
