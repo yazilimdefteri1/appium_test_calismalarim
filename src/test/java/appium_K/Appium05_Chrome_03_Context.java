@@ -40,7 +40,6 @@ public class Appium05_Chrome_03_Context {
 
         driver.get("https://www.amazon.com");
 
-
         //  Contetxt için link-->    https://appium.io/docs/en/commands/context/get-contexts/
         String contrext = driver.getContext();
         System.out.println("1 " + contrext);
@@ -58,6 +57,7 @@ public class Appium05_Chrome_03_Context {
         Thread.sleep(8000);
         Assert.assertTrue(driver.findElementByXPath("//h2").isDisplayed());
         System.out.println("3 " + driver.getContext());
+
 
         driver.quit();
 
