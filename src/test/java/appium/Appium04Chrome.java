@@ -21,7 +21,7 @@ public class Appium04Chrome {
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"Emulator");
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"10.0");
-       // desiredCapabilities.setCapability("chromedriverExecutable","E:\\Yazılım projeleri\\intelji IDE\\projelerim\\appiumkurulum\\driver\\chromedriver.exe");
+
         desiredCapabilities.setCapability("appPackage","com.android.chrome");
         desiredCapabilities.setCapability("appActivity","com.google.android.apps.chrome.Main");
         desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET,true);

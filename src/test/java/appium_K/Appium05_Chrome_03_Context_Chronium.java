@@ -3,7 +3,6 @@ package appium_K;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Set;
 
-public class Appium05_Chrome_03_Context {
+public class Appium05_Chrome_03_Context_Chronium {
 
     @Test
 
@@ -45,15 +44,21 @@ public class Appium05_Chrome_03_Context {
         System.out.println("1 " + contrext);
         Set contextList = driver.getContextHandles();
 
-        for (Object context : contextList) {
-            System.out.println(context.toString());
+        for (Object contextName : contextList) {
+            System.out.println(contextName.toString());
+            Thread.sleep(3000);
+            if (contextName.toString().contains("CHRONIUM")){
+                //alttaki kodda hangi app turunde çalışacak onu set ediyoruz
+                driver.context((String) contextName); // WEB APP DEVAM EDECEĞİZ
+                Thread.sleep(1000);
+            }
         }
         System.out.println("2 " + driver.getContext());
 
         // remote device on chrome   linkine git ve tel ile bilgisayardaki chrome bağla
         Thread.sleep(5000);
-        AndroidElement sigin = driver.findElementById("nav-progressive-greeting");
-        sigin.click();
+        AndroidElement signin = driver.findElementById("nav-progressive-greeting");
+        signin.click();
         Thread.sleep(8000);
         Assert.assertTrue(driver.findElementByXPath("//h2").isDisplayed());
         System.out.println("3 " + driver.getContext());
